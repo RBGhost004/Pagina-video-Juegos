@@ -1,0 +1,94 @@
+body {
+    padding: 10px;
+}
+
+.centrar_imagen {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(110, 0, 110);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.cuadro_login {
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 400px;
+}
+
+.boton_ingresar {
+    width: 200px;
+    margin: auto
+}
+
+.index_disponible {
+    color: green;
+    font-weight: bolder;
+}
+
+.index_nodisponible {
+    color: red;
+    font-weight: bolder;
+}
+
+.index_precio {
+    color: blue;
+    font-size: 20px;
+}
+
+.index_subscrito {
+    color: rgb(255, 0, 43);
+    font-size: 20px;
+}
+
+.index_stock {
+    color: green;
+    font-weight: bolder;
+}
+
+.ficha_foto {
+    height: 100%;
+    float: right;
+    border: 3px solid gray;
+}
+
+.ficha_titulo {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.ficha_disponible {
+    color: green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.ficha_nodisponible {
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.ficha_precio {
+    font-size: 40px;
+}
+
+.registro_foto {
+    height: 200px;
+}
+
+/* div {
+    border: 1px solid blue;
+} */
+
+/* Estilos de boleta.html */
+
+#boleta_tabla_estados td {
+    text-align: center;
+    vertical-align: top;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.gamegalaxy.cl/mantenedo_productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="menu"></div>
+
+    <h1><img src="img/logo2.PNG" alt=""></h1>
+    
+    <h2><span style="color: rgb(110, 0, 110);">MANTENEDOR DE PRODUCTOS</span></h2>
+    <br><br>
+    
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="container-fluid">
+            <div class="row justify-content-left">
+
+                <div class="col-sm-12 col-md-4">
+
+                    <!-- ID -->
+                    <div class="mb-3">
+                        <label for="id" class="form-label">ID</label>
+                        <input required placeholder="29" 
+                            type="text" class="form-control" 
+                            id="id" name="id" aria-describedby="idHelp">
+                    </div>
+
+                    <!-- Categoria -->
+                    <div class="mb-3">
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <br>
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            - seleccionar alguna categoría -
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Videojuegos</a></li>
+                          </ul>
+                    </div>
+
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input required placeholder="Diablo 3 eternal edition" 
+                            type="text" class="form-control" 
+                            id="nombre" name="nombre" aria-describedby="nombreHelp">
+                    </div>
+
+                    <!-- Descripcion -->
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción</label>
+                        <textarea required placeholder="Juego RPG sangriento donde puedes subir de nivel y explorar diferentes partes del gran mapa del juego. Todo para derrotar a Diablo" 
+                            class="form-control" rows="3"
+                            id="descripcion" name="descripcion" aria-describedby="descripcionHelp"></textarea>
+                    </div>
+
+                    <!-- Precio -->
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input required placeholder="$44.990" 
+                            type="text" class="form-control" 
+                            id="precio" name="precio" aria-describedby="precioHelp">
+                    </div>
+
+                    <!-- Descuento suscriptor -->
+                    <div class="mb-3">
+                        <label for="descuentosuscriptor" class="form-label">Descuento suscriptor</label>
+                        <input required placeholder="6%" 
+                            type="text" class="form-control" 
+                            id="descuentosuscriptor" name="descuentosuscriptor" aria-describedby="descuentosuscriptorHelp">
+                    </div>
+
+                    <!-- Descuento por oferta -->
+                    <div class="mb-3">
+                        <label for="descuentooferta" class="form-label">Descuento oferta</label>
+                        <input required placeholder="0%" 
+                            type="text" class="form-control" 
+                            id="descuentooferta" name="descuentooferta" aria-describedby="descuentoofertaHelp">
+                    </div>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-primary">Nuevo</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>
+
+                </div>
+                <!-- Foto producto -->
+                <div class="col-sm-12 col-md-2">
+                    <img src="img/0478758834510.webp" width="400px" alt="" >
+                    <button type="button" class="btn btn-danger">Cargar Imagen</button>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="row" style="border: 5px solid black;">
+                <div class="col">
+                    
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Categoría</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>% Desc suscriptor</th>
+                            <th>% Desc oferta</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>666</td>
+                            <td>Videojuego</td>
+                            <td>Diablo 3</td>
+                            <td>Action RPG</td>
+                            <td>$44.990</td>
+                            <td>6%</td>
+                            <td>5%</td>
+                          </tr>
+                          <tr>
+                            <tr>
+                            <td>666</td>
+                            <td>Videojuego</td>
+                            <td>Diablo 3</td>
+                            <td>Action RPG</td>
+                            <td>$44.990</td>
+                            <td>6%</td>
+                            <td>5%</td>
+                          </tr>
+                          <tr>
+                            <td>666</td>
+                            <td>Videojuego</td>
+                            <td>Diablo 3</td>
+                            <td>Action RPG</td>
+                            <td>$44.990</td>
+                            <td>6%</td>
+                            <td>5%</td>
+                          </tr>
+                          <tr>
+                            <td>666</td>
+                            <td>Videojuego</td>
+                            <td>Diablo 3</td>
+                            <td>Action RPG</td>
+                            <td>$44.990</td>
+                            <td>6%</td>
+                            <td>5%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+    
+                </div>
+            </div>
+
+        </div>  
+    </form>
+
+    <br><br><br><br>
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
