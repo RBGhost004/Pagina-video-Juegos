@@ -68,6 +68,12 @@ h1 {
     font-size: 30px;
 }
 
+.ficha_nodisponible {
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 .ficha_precio {
     font-size: 40px;
 }
@@ -85,4 +91,25 @@ h1 {
 #boleta_tabla_estados td {
     text-align: center;
     vertical-align: top;
+}
+/*css de java script para errores*/
+
+body {
+    padding: 10px;
+}
+
+.btn-ancho-fijo {
+    width: 120px;
+}
+
+/* Etiquetas en negrita */
+label {
+    font-weight: bolder;
+}
+
+/* CSS de letra de error de JQuery Validate, para que
+    aparezcan en rojo los errores de campos  */
+.error {
+    color: red;
+    font-weight: bolder;
 }
