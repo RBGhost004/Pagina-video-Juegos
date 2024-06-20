@@ -71,6 +71,9 @@ $(document).ready(function() {
         required: true,
         emailCompleto: true,
       },
+      direccion:{
+        required: true,
+      },
       password: {
         required: true,
         minlength: 5,
@@ -92,9 +95,16 @@ $(document).ready(function() {
         required: "El nombre es un campo requerido",
         soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
       },
+      apellido: {
+        required: "El apellido es un campo obligatorio",
+        soloLetras: "El nombre sólo puede contener letras y espacios en blanco"
+      },
       correo: {
         required: "El correo es un campo requerido",
         email: "El formato del correo no es válido",
+      },
+      direccion: {
+        required: "La dirección es un campo obligatorio"
       },
       password: {
         required: "La contraseña es un campo requerido",
@@ -108,6 +118,77 @@ $(document).ready(function() {
         equalTo: "Debe repetir la contraseña escrita anteriormente",
       },
     }, // --> Fin de mensajes
+  }); 
+
+  $("#formulario-usuarios-adm").validate({
+    rules: {
+      idUsuario: {
+        required: true,
+        soloNumeros: true
+      },
+      tipoDeUsuario: {
+        required: true,
+        check_radio: true
+      },
+      rut: {
+        required: true,
+        rutChileno: true
+      },
+      nombre: {
+        required: true,
+        soloLetras: true
+      },
+      apellidos: {
+        required: true,
+        soloLetras: true
+      },
+      correo: {
+        required: true,
+        emailCompleto: true,
+      },
+      direccion: {
+        required: true,
+      },
+      password: {
+        required: true,
+        minlength: 5,
+        maxlength: 15,
+      },
+
+    }, // --> Fin de reglas
+    messages: {
+      idUsuario: {
+        required: "El ID es un campo requerido",
+        soloNumeros: "El ID no es válido (escriba solo numeros)"
+      },
+      tipoDeUsuario: {
+        required: "Por favor, selecciona una opción."
+      },
+      rut: {
+        required: "El RUT es un campo requerido",
+        rutChileno: "El RUT no es válido (escriba sin puntos y con guión)"
+      },
+      nombre: {
+        required: "El nombre es un campo requerido",
+        soloLetras: "El nombre sólo puede contener letras y espacios en blanco",
+      },
+      apellidos: {
+        required: "Los apellidos es un campo requerido",
+        soloLetras: "Los apellidos sólo pueden contener letras y espacios en blanco",
+      },
+      correo: {
+        required: "El correo es un campo requerido",
+        email: "El formato del correo no es válido",
+      },
+      direccion: {
+        required: "La direccion es un campo requerido",
+      },
+      password: {
+        required: "La contraseña es un campo requerido",
+        minlength: "La contraseña debe tener un mínimo de 5 caracteres",
+        maxlength: "La contraseña debe tener un máximo de 15 caracteres",
+      },
+
+    }, // --> Fin de mensajes
   });
-  
 });

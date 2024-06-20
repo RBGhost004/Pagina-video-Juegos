@@ -113,3 +113,17 @@ label {
     color: red;
     font-weight: bolder;
 }
+
+/*CSS EXTRA*/
+
+.cards-container {
+    margin-top: 84px;
+    margin-bottom: 84px;
+}
+
+@media (max-width: 768px) {
+    .file-upload-container .btn-file-upload {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
