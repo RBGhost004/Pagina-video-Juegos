@@ -22,15 +22,14 @@
 
                     <!-- CATEGORIA -->
                     <div class="mb-3">
-                        <label for="categoriaSelect" class="form-label">Categoría</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-light dropdown-toggle" id="categoriaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                - seleccionar alguna categoría -
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="categoriaDropdown">
-                                <li><a class="dropdown-item" href="#">Videojuegos</a></li>
-                            </ul>
-                        </div>
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <select required class="form-select" id="categoria" name="categoria">
+                            <option value="">- seleccionar alguna categoría -</option>
+                            <option value="Videojuegos">Videojuegos</option>
+                            <option value="Electrónica">Electrónica</option>
+                            <option value="Ropa">Ropa</option>
+                            <!-- Agrega más opciones según tus necesidades -->
+                        </select>
                     </div>
 
                     <!-- NOMBRE -->
